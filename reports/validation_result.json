@@ -1,0 +1,233 @@
+{
+    "success": true,
+    "results": [
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_table_columns_to_match_set",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column_set": [
+                        "Order ID",
+                        "Date",
+                        "Product",
+                        "Price",
+                        "Quantity",
+                        "Purchase Type",
+                        "Payment Method",
+                        "City",
+                        "month",
+                        "day_of_week"
+                    ]
+                },
+                "meta": {},
+                "id": "01d6082a-2df9-4ab6-a89d-51e4b0ad98dd",
+                "severity": "critical"
+            },
+            "result": {
+                "observed_value": [
+                    "City",
+                    "Date",
+                    "Order ID",
+                    "Payment Method",
+                    "Price",
+                    "Product",
+                    "Purchase Type",
+                    "Quantity",
+                    "day_of_week",
+                    "month"
+                ]
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column": "Price"
+                },
+                "meta": {},
+                "id": "e995f227-73d8-4af8-934f-ed9fc9353130",
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 203,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column": "Price",
+                    "min_value": 1.0,
+                    "max_value": 50.0
+                },
+                "meta": {},
+                "id": "967a2d30-b5c9-4cd1-82ed-1e043a214c1d",
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 203,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column": "Quantity"
+                },
+                "meta": {},
+                "id": "770c06d7-4507-41a7-8eeb-9e6c401331a8",
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 203,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_be_between",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column": "Quantity",
+                    "min_value": 100.0,
+                    "max_value": 1000.0
+                },
+                "meta": {},
+                "id": "3aeb4c73-a898-4f55-aba6-f9475afd6647",
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 203,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "missing_count": 0,
+                "missing_percent": 0.0,
+                "unexpected_percent_total": 0.0,
+                "unexpected_percent_nonmissing": 0.0,
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        },
+        {
+            "success": true,
+            "expectation_config": {
+                "type": "expect_column_values_to_not_be_null",
+                "kwargs": {
+                    "batch_id": "pandas_data_source-training_asset",
+                    "column": "Product"
+                },
+                "meta": {},
+                "id": "00a2d877-0489-47e8-9b46-a6d6198c84c9",
+                "severity": "critical"
+            },
+            "result": {
+                "element_count": 203,
+                "unexpected_count": 0,
+                "unexpected_percent": 0.0,
+                "partial_unexpected_list": [],
+                "partial_unexpected_counts": [],
+                "partial_unexpected_index_list": []
+            },
+            "meta": {},
+            "exception_info": {
+                "raised_exception": false,
+                "exception_traceback": null,
+                "exception_message": null
+            }
+        }
+    ],
+    "suite_name": "data_validation_suite",
+    "suite_parameters": {},
+    "statistics": {
+        "evaluated_expectations": 6,
+        "successful_expectations": 6,
+        "unsuccessful_expectations": 0,
+        "success_percent": 100.0
+    },
+    "meta": {
+        "great_expectations_version": "1.18.1",
+        "batch_spec": {
+            "batch_data": "PandasDataFrame"
+        },
+        "batch_markers": {
+            "ge_load_time": "20261006T210822.101927Z",
+            "pandas_data_fingerprint": "3f81809ca63e304ac84cb75f896c1c83"
+        },
+        "active_batch_definition": {
+            "datasource_name": "pandas_data_source",
+            "data_connector_name": "fluent",
+            "data_asset_name": "training_asset",
+            "batch_identifiers": {
+                "dataframe": "<DATAFRAME>"
+            }
+        },
+        "validation_id": "7b981663-ff7d-4bbd-818e-3fcfd4822646",
+        "checkpoint_id": null,
+        "run_id": {
+            "run_name": null,
+            "run_time": "2026-10-06T21:08:22.146467+00:00"
+        },
+        "validation_time": "2026-10-06T21:08:22.146467+00:00",
+        "batch_parameters": {
+            "dataframe": "<DATAFRAME>"
+        }
+    },
+    "id": null
+}
